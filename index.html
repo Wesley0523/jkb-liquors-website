@@ -3,157 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JKB (Jikuybambe) Liquors</title>
 
-    <style>
+    <title>JKB Liquors</title>
 
-        body{
-        margin:0;
-        font-family:Segoe UI, sans-serif;
-        background:#0f172a;
-        color:white;
-        }
+    <link rel="stylesheet" href="style.css">
 
-        header{
-        background:#020617;
-        padding:20px;
-        display:flex;
-        justify-content:space-between;
-        align-items:center;
-        }
-
-        header h1{
-        color:#facc15;
-        margin:0;
-        }
-
-        .cart{
-        background:#facc15;
-        color:black;
-        padding:8px 14px;
-        border-radius:8px;
-        font-weight:bold;
-        }
-
-        nav{
-        background:#1e293b;
-        padding:12px;
-        text-align:center;
-        }
-
-        nav a{
-        color:white;
-        margin:0 15px;
-        text-decoration:none;
-        font-weight:bold;
-        }
-
-        .hero{
-        padding:70px 20px;
-        text-align:center;
-        background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
-        url("https://images.unsplash.com/photo-1605276373954-0c4a0dac5b12") center/cover;
-        }
-
-        .search{
-        text-align:center;
-        padding:20px;
-        }
-
-        .search input{
-        padding:10px;
-        width:250px;
-        border-radius:6px;
-        border:none;
-        }
-
-        .filters{
-        text-align:center;
-        margin-bottom:20px;
-        }
-
-        .filters button{
-        margin:5px;
-        padding:8px 15px;
-        border:none;
-        border-radius:6px;
-        background:#334155;
-        color:white;
-        cursor:pointer;
-        }
-
-        .products{
-        display:grid;
-        grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-        gap:25px;
-        padding:40px;
-        }
-
-        .card{
-        background:#1e293b;
-        border-radius:12px;
-        padding:20px;
-        text-align:center;
-        }
-
-        .card img{
-        height:220px;
-        object-fit:contain;
-        }
-
-        .card h3{
-        color:#facc15;
-        }
-
-        .price{
-        font-size:18px;
-        margin:5px 0;
-        }
-
-        button{
-        background:#22c55e;
-        border:none;
-        padding:10px 15px;
-        border-radius:6px;
-        color:white;
-        cursor:pointer;
-        }
-
-        button:hover{
-        background:#16a34a;
-        }
-
-        .contact{
-        background:#020617;
-        text-align:center;
-        padding:40px;
-        }
-
-        footer{
-        background:black;
-        text-align:center;
-        padding:15px;
-        }
-
-        .whatsapp{
-        position:fixed;
-        bottom:20px;
-        right:20px;
-        background:#25D366;
-        color:white;
-        padding:15px;
-        border-radius:50%;
-        font-size:20px;
-        text-decoration:none;
-        }
-
-    </style>
 </head>
 
 <body>
 
 <header>
-    <h1>🍾 JKB Liquors</h1>
+    <h1>🍾 JKB (Jikuybambe) Liquors</h1>
     <div class="cart">Cart: <span id="cart-count">0</span></div>
 </header>
 
@@ -165,126 +25,21 @@
 
 <section class="hero">
     <h2>Quality Drinks • Best Prices</h2>
-    <p>Whisky • Vodka • Brandy • Beer</p>
 </section>
 
 <div class="search">
     <input type="text" id="search" placeholder="Search drinks...">
 </div>
 
-<div class="filters">
-    <button onclick="filterProducts('all')">All</button>
-    <button onclick="filterProducts('beer')">Beer</button>
-    <button onclick="filterProducts('vodka')">Vodka</button>
-    <button onclick="filterProducts('whisky')">Whisky</button>
-    <button onclick="filterProducts('cider')">Cider</button>
-</div>
-
-<section class="products" id="products">
-
-    <div class="card whisky">
-        <img src="https://images.ctfassets.net/waruwpig3jxu/rYk8WxpJ1ellZvibRckWT/0e8df23f16b39c6d986faf6f68af8fee/black-750ml_producthero_lifestyle-01_desktop.webp">
-        <h3>Johnnie Walker</h3>
-        <p class="price">R350</p>
-        <button onclick="addToCart('Johnnie Walker')">Add to Cart</button>
-    </div>
-
-    <div class="card vodka">
-        <img src="https://barkeeper.co.za/wp-content/uploads/2024/10/barkeeper-230-Smirnoff_1818_Vodka_750ml.png">
-        <h3>Smirnoff Vodka</h3>
-        <p class="price">R220</p>
-        <button onclick="addToCart('Smirnoff Vodka')">Add to Cart</button>
-    </div>
-
-    <div class="card beer">
-        <img src="https://shoprite-ecommerce-prod-cdn.azureedge.net/sys-master-images/h82/h01/13535822512158/515Wx515H_checkers1200Wx1200H_10204841PK1.webp">
-        <h3>Heineken 6 Pack</h3>
-        <p class="price">R180</p>
-        <button onclick="addToCart('Heineken 6 Pack')">Add to Cart</button>
-    </div>
-
-    <div class="card cider">
-        <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSTHkt2FD0uSQ_1ZInP41SHrhca3EYjpRmA-QNiokI1WSjGaIJgOZ74U5H3ixxxfSSleC4wVNfITYSY2c6__qRmu-aZVOOhmXXTuzvlf3Rbk1W0X1NLUAdZH1nhrtqP6hqaDRAyoA&usqp=CAc">
-        <h3>Ice Tropez 6 Pack</h3>
-        <p class="price">R480</p>
-        <button onclick="addToCart('Ice Tropez 6 Pack')">Add to Cart</button>
-    </div>
-
-</section>
+<section class="products" id="products"></section>
 
 <section class="contact" id="contact">
-    <h2>Contact Us</h2>
-    <p>📍 JKB (Jikuybambe) Liquors
-        27 Main Road Mfuleni(near old Taxi rank)</p>
-    <p>📞 Phone: 081 253 9499</p>
+    <h2>Contact</h2>
+    <p>📞 081 253 9499</p>
 </section>
 
-<footer>
-    <p>© 2026 JKB Liquors</p>
-</footer>
-
-<a class="whatsapp" id="orderBtn">💬</a>
-
-<script>
-
-    let cart=[]
-    let count=0
-
-    function addToCart(product){
-    cart.push(product)
-    count++
-    document.getElementById("cart-count").innerText=count
-    updateWhatsApp()
-    }
-
-    function updateWhatsApp(){
-    let message="Hello JKB Liquors, I want to order:%0A"
-
-    cart.forEach(item=>{
-    message+="• "+item+"%0A"
-    })
-
-    document.getElementById("orderBtn").href=
-    "https://wa.me/27812539499?text="+message
-    }
-
-    function filterProducts(category){
-
-    let products=document.querySelectorAll(".card")
-
-    products.forEach(p=>{
-    if(category==="all"){
-    p.style.display="block"
-    }
-    else if(p.classList.contains(category)){
-    p.style.display="block"
-    }
-    else{
-    p.style.display="none"
-    }
-    })
-
-    }
-
-    document.getElementById("search").addEventListener("keyup",function(){
-
-    let value=this.value.toLowerCase()
-    let cards=document.querySelectorAll(".card")
-
-    cards.forEach(card=>{
-
-    if(card.innerText.toLowerCase().includes(value)){
-    card.style.display="block"
-    }
-    else{
-    card.style.display="none"
-    }
-
-    })
-
-    })
-
-</script>
+<script src="products.js"></script>
+<script src="app.js"></script>
 
 </body>
 </html>
