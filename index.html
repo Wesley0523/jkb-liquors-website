@@ -1,45 +1,359 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>JKB Liquors</title>
+<meta charset="UTF-8">
 
-    <link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>
+JKB Liquors | Premium Drinks
+</title>
+
+<link rel="stylesheet" href="css/style.css">
 
 </head>
 
+
 <body>
 
-<header>
-    <h1>🍾 JKB (Jikuybambe) Liquors</h1>
-    <div class="cart">Cart: <span id="cart-count">0</span></div>
-</header>
 
-<nav>
-    <a href="#">Home</a>
-    <a href="#products">Products</a>
-    <a href="#contact">Contact</a>
-</nav>
+<!-- AGE VERIFICATION -->
 
-<section class="hero">
-    <h2>Quality Drinks • Best Prices</h2>
-</section>
+<div id="age-popup">
 
-<div class="search">
-    <input type="text" id="search" placeholder="Search drinks...">
+<div class="age-box">
+
+<h2>
+🍾 JKB Liquors
+</h2>
+
+
+<p>
+You must be 18 years or older to enter.
+</p>
+
+
+<button onclick="confirmAge()">
+I am 18 or older
+</button>
+
+
+<button onclick="leaveSite()">
+Exit
+</button>
+
+
 </div>
 
-<section class="products" id="products"></section>
+</div>
 
-<section class="contact" id="contact">
-    <h2>Contact</h2>
-    <p>📞 081 253 9499</p>
+
+
+
+
+<header>
+
+<h1>
+🍾 JKB Liquors
+</h1>
+
+
+<div class="cart">
+
+<a href="cart.html">
+
+🛒 Cart:
+<span id="cart-count">
+0
+</span>
+
+</a>
+
+</div>
+
+
+</header>
+
+
+
+
+
+<nav>
+
+
+<a href="index.html">
+Home
+</a>
+
+
+<a href="products.html">
+Shop
+</a>
+
+
+<a href="#specials">
+Specials
+</a>
+
+
+<a href="#contact">
+Contact
+</a>
+
+
+<a href="admin.html">
+Admin
+</a>
+
+
+</nav>
+
+
+
+
+
+
+
+<section class="hero">
+
+
+<h2>
+Premium Drinks.
+Easy Collection.
+</h2>
+
+
+<p>
+Order your favourite spirits, beers and wines online.
+Pay securely and collect from JKB Liquors.
+</p>
+
+
+<button onclick="location.href='products.html'">
+
+Shop Now
+
+</button>
+
+
 </section>
 
-<script src="products.js"></script>
-<script src="app.js"></script>
+
+
+
+
+
+
+<section class="categories">
+
+
+<h2>
+Shop Categories
+</h2>
+
+
+<div class="category-grid">
+
+
+<div>
+🥃
+<h3>
+Whisky
+</h3>
+</div>
+
+
+
+<div>
+🍺
+<h3>
+Beer
+</h3>
+</div>
+
+
+
+<div>
+🍷
+<h3>
+Wine
+</h3>
+</div>
+
+
+
+<div>
+🍸
+<h3>
+Gin
+</h3>
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<section id="specials" class="featured">
+
+
+<h2>
+Featured Drinks
+</h2>
+
+
+<p>
+Premium products coming soon.
+</p>
+
+
+</section>
+
+
+
+
+
+
+
+<section class="ai">
+
+
+<h2>
+💬 AI Drink Assistant
+</h2>
+
+
+<p>
+Need help choosing a drink?
+</p>
+
+
+<input 
+type="text"
+placeholder="Example: Whisky under R600"
+>
+
+
+<button>
+Ask AI
+</button>
+
+
+</section>
+
+
+
+
+
+
+
+<section class="trust">
+
+
+<div>
+
+<h3>
+🔒 Secure Payments
+</h3>
+
+
+<p>
+Safe online payments.
+</p>
+
+</div>
+
+
+
+
+<div>
+
+<h3>
+🏪 Store Collection
+</h3>
+
+
+<p>
+Order online and collect.
+</p>
+
+</div>
+
+
+
+
+<div>
+
+<h3>
+🍾 Licensed Retailer
+</h3>
+
+
+<p>
+Trusted liquor supplier.
+</p>
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<section id="contact" class="contact">
+
+
+<h2>
+Contact
+</h2>
+
+
+<p>
+📞 081 253 9499
+</p>
+
+
+<p>
+Collection available in store.
+</p>
+
+
+</section>
+
+
+
+
+
+
+
+<footer>
+
+<p>
+© 2026 JKB Liquors
+</p>
+
+
+</footer>
+
+
+
+
+<script src="js/app.js"></script>
+
 
 </body>
+
 </html>

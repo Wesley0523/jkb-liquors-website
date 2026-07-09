@@ -1,0 +1,605 @@
+/* =========================
+   GLOBAL STYLES
+========================= */
+
+*{
+    box-sizing:border-box;
+}
+
+
+body{
+
+    margin:0;
+
+    font-family:
+    'Segoe UI',
+    Arial,
+    sans-serif;
+
+    background:#0f172a;
+
+    color:white;
+
+}
+
+
+a{
+
+    color:white;
+
+}
+
+
+
+/* =========================
+   HEADER
+========================= */
+
+
+header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px 40px;
+
+    background:#020617;
+
+}
+
+
+header h1{
+
+    color:#facc15;
+
+    margin:0;
+
+    font-size:28px;
+
+}
+
+
+.cart a{
+
+    background:#facc15;
+
+    color:#020617;
+
+    padding:10px 18px;
+
+    border-radius:10px;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+}
+
+
+
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+
+nav{
+
+    padding:15px;
+
+    background:#1e293b;
+
+    text-align:center;
+
+}
+
+
+nav a{
+
+    margin:0 20px;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+    transition:0.3s;
+
+}
+
+
+nav a:hover{
+
+    color:#facc15;
+
+}
+
+
+
+
+
+/* =========================
+   AGE VERIFICATION
+========================= */
+
+
+#age-popup{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:100%;
+
+    background:rgba(0,0,0,0.85);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:999;
+
+}
+
+
+.age-box{
+
+    background:#1e293b;
+
+    padding:40px;
+
+    text-align:center;
+
+    border-radius:15px;
+
+    max-width:400px;
+
+}
+
+
+.age-box h2{
+
+    color:#facc15;
+
+}
+
+
+
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+
+button{
+
+    background:#22c55e;
+
+    color:white;
+
+    border:none;
+
+    padding:12px 25px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    margin:10px;
+
+    transition:0.3s;
+
+}
+
+
+button:hover{
+
+    background:#16a34a;
+
+}
+
+
+
+
+
+/* =========================
+   HERO
+========================= */
+
+
+.hero{
+
+    padding:120px 30px;
+
+    text-align:center;
+
+    background:
+
+    linear-gradient(
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.7)
+    ),
+    url("../images/products/hero.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+}
+
+
+.hero h2{
+
+    font-size:45px;
+
+    color:#facc15;
+
+}
+
+
+.hero p{
+
+    font-size:20px;
+
+    max-width:700px;
+
+    margin:auto;
+
+}
+
+
+
+
+
+/* =========================
+   CATEGORIES
+========================= */
+
+
+.categories{
+
+    padding:50px 20px;
+
+    text-align:center;
+
+}
+
+
+
+.category-grid{
+
+
+    display:grid;
+
+    grid-template-columns:
+
+    repeat(auto-fit,minmax(180px,1fr));
+
+    gap:25px;
+
+    padding:30px;
+
+
+}
+
+
+
+.category-grid div{
+
+
+    background:#1e293b;
+
+    padding:35px;
+
+    border-radius:15px;
+
+    font-size:25px;
+
+    transition:0.3s;
+
+
+}
+
+
+
+.category-grid div:hover{
+
+    transform:translateY(-8px);
+
+    background:#334155;
+
+}
+
+
+
+
+
+/* =========================
+   PRODUCTS
+========================= */
+
+
+.products{
+
+
+    display:grid;
+
+    grid-template-columns:
+
+    repeat(auto-fit,minmax(250px,1fr));
+
+
+    gap:25px;
+
+    padding:40px;
+
+
+}
+
+
+
+.card{
+
+
+    background:#1e293b;
+
+    padding:25px;
+
+    text-align:center;
+
+    border-radius:15px;
+
+    transition:0.3s;
+
+
+}
+
+
+
+.card:hover{
+
+
+    transform:translateY(-5px);
+
+
+}
+
+
+
+.card img{
+
+
+    width:200px;
+
+    height:220px;
+
+    object-fit:contain;
+
+
+}
+
+
+
+
+
+
+/* =========================
+   FEATURED PRODUCTS
+========================= */
+
+
+.featured{
+
+    padding:50px;
+
+    text-align:center;
+
+}
+
+
+
+
+/* =========================
+   AI ASSISTANT
+========================= */
+
+
+.ai{
+
+
+    padding:60px 20px;
+
+    text-align:center;
+
+    background:#111827;
+
+
+}
+
+
+.ai input{
+
+
+    padding:14px;
+
+    width:300px;
+
+    border-radius:8px;
+
+    border:none;
+
+
+}
+
+
+
+
+
+/* =========================
+   TRUST SECTION
+========================= */
+
+
+.trust{
+
+
+    display:grid;
+
+    grid-template-columns:
+
+    repeat(auto-fit,minmax(250px,1fr));
+
+
+    gap:25px;
+
+    padding:50px;
+
+    text-align:center;
+
+
+}
+
+
+
+.trust div{
+
+
+    background:#1e293b;
+
+    padding:25px;
+
+    border-radius:15px;
+
+
+}
+
+
+
+.trust h3{
+
+    color:#facc15;
+
+}
+
+
+
+
+
+/* =========================
+   CONTACT
+========================= */
+
+
+.contact{
+
+
+    padding:50px;
+
+    text-align:center;
+
+}
+
+
+
+
+
+/* =========================
+   FOOTER
+========================= */
+
+
+footer{
+
+
+    background:#020617;
+
+    padding:25px;
+
+    text-align:center;
+
+
+}
+
+
+
+
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+
+@media(max-width:700px){
+
+
+header{
+
+
+    flex-direction:column;
+
+    gap:15px;
+
+
+}
+
+
+nav a{
+
+
+    display:block;
+
+    margin:15px;
+
+
+}
+
+
+.hero{
+
+
+    padding:70px 20px;
+
+
+}
+
+
+.hero h2{
+
+
+    font-size:32px;
+
+
+}
+
+
+.category-grid{
+
+
+    grid-template-columns:1fr;
+
+
+}
+
+
+.ai input{
+
+
+    width:90%;
+
+
+}
+
+
+}
